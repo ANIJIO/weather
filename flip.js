@@ -34,7 +34,7 @@ const changemode=()=>{
             let lag= data.coords.latitude;
             let long= data.coords.longitude;
             // x.innerText = `lat is ${lag} long is ${long}`
-             const url = ` http://api.openweathermap.org/data/2.5/forecast/daily?lat=${lag}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+             const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lag}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
              fetch(url,{method:'GET'})
              .then((res)=> res.json())
              .then((data)=>{
@@ -49,16 +49,4 @@ const changemode=()=>{
 
 
 
-          const person = {
-             firstname:"aniket",
-             lastname:"jiotode",
-              fullname: function(){
-                  return this.name +" " + this.lastname;
-             } 
-
-          }
-
-          const person1 ={
-            firstname:"jhon",
-            lastname: "biden",
-          }
+         
